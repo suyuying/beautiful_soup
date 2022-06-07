@@ -85,8 +85,8 @@ def get_img_url(url):
     return img_source
 
 def telegram_bot_sendtext(bot_message):
-    bot_token = '5253897786:AAHqsAlpTLD1MuPAeP2uELKUWE1DPn_2N3o'
-    bot_chatID = '-635958041'
+    bot_token = ''
+    bot_chatID = ''
     send_text = 'https://api.telegram.org/bot' + bot_token + '/sendMessage?chat_id=' + bot_chatID + '&parse_mode=Markdown&text=' + bot_message
     print(send_text)
     requests.packages.urllib3.disable_warnings()
